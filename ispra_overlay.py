@@ -62,14 +62,17 @@ def dissolve_touching_by_rp(gdf):
 # 1. LOAD
 # -------------------------
 gdfs = {k: gpd.read_file(v) for k, v in layers.items()}
-logging.info("Loaded gdfs")
+logging.info("ISPRA - loaded gdfs")
 
 # -------------------------
 # 2. DISSOLVE (order here is irrelevant logically, but cleaner)
 # -------------------------
 gdf_H_dissolved = gdfs["H"]
+logging.info("ISPRA - gdf H dissolved")
 gdf_M_dissolved = gdfs["M"]
+logging.info("ISPRA - gdf M dissolved")
 gdf_L_dissolved = gdfs["L"]
+logging.info("ISPRA - gdf L dissolved")
 
 # -------------------------
 # 3. OVERLAY (hierarchy H > M > L)

@@ -57,7 +57,7 @@ def dissolve_touching_by_rp(gdf):
 
 adb_am_2026_merge_file = r"/home/admin_climatecharted_com/data/ADB/adb_am_2026/ADB-AM_2026_merge_cum_prob_RP/ADB-AM_2026_merge_cum_prob_RP.shp"
 gdf = gpd.read_file(adb_am_2026_merge_file)
-logging.info("Loaded gdf")
+logging.info("ADB AM - loaded gdf")
 
 # -------------------------
 # 2. DISSOLVE (order here is irrelevant logically, but cleaner)

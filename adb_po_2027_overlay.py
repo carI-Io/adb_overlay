@@ -62,7 +62,7 @@ def dissolve_touching_by_rp(gdf):
 # 1. LOAD
 # -------------------------
 gdfs = {k: gpd.read_file(v) for k, v in layers.items()}
-logging.info("Loaded gdfs")
+logging.info("ADB PO - loaded gdfs")
 
 # -------------------------
 # 2. DISSOLVE (order here is irrelevant logically, but cleaner)

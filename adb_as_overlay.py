@@ -58,7 +58,7 @@ def dissolve_touching_by_rp(gdf):
 
 adb_as_2026_merge_file = r"/home/admin_climatecharted_com/data/ADB/adb_as_2026/PIANIFICAZIONE_SIT_PGRA_ITC_FLUVIAL_cum_prob_RP/PIANIFICAZIONE_SIT_PGRA_ITC_FLUVIAL_cum_prob_RP.shp"
 gdf = gpd.read_file(adb_as_2026_merge_file)
-logging.info("Loaded gdf")
+logging.info("ADB AS - loaded gdf")
 
 # -------------------------
 # 2. DISSOLVE (order here is irrelevant logically, but cleaner)
