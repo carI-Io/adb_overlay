@@ -16,7 +16,7 @@ layers = {
 # 1. LOAD
 # -------------------------
 gdfs = {k: gpd.read_file(v) for k, v in layers.items()}
-gdfs = {k: gdf.buffer(0) for k, gdf in gdfs.items()}
+gdfs = {k: gdf.assign(geometry=gdf.geometry.buffer(0)) for k, gdf in gdfs.items()}
 logging.info("ISPRA - loaded gdfs")
 
 # -------------------------
