@@ -1,166 +1,36 @@
-INFO:root:Loaded gdf
-INFO:root:RP 10.0
-INFO:root:RP 30.0
-INFO:root:RP 200.0
-INFO:root:RP 500.0
-INFO:pyogrio._io:Created 355,512 records
-INFO:root:ADB AM - Done
-Copying file:///home/admin_climatecharted_com/data/ADB/adb_am_2026/ADB-AM_2026_merge_RP_overlay/ADB-AM_2026_merge_RP_overlay.shp [Content-Type=application/x-qgis]...
-/ [0/5 files][    0.0 B/  1.7 GiB]   0% Done                                    
-==> NOTE: You are uploading one or more large file(s), which would run
-significantly faster if you enable parallel composite uploads. This
-feature can be enabled by editing the
-"parallel_composite_upload_threshold" value in your .boto
-configuration file. However, note that if you do this large files will
-be uploaded as `composite objects
-<https://cloud.google.com/storage/docs/composite-objects>`_,which
-means that any user who downloads such objects will need to have a
-compiled crcmod installed (see "gsutil help crcmod"). This is because
-without a compiled crcmod, computing checksums on composite objects is
-so slow that gsutil disables downloads of composite objects.
+INFO:root:ISPRA - loaded gdfs
+INFO:root:ISPRA - gdf H dissolved
+INFO:root:ISPRA - gdf M dissolved
+INFO:root:ISPRA - gdf L dissolved
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/admin_climatecharted_com/GitHub/flood_maps/ispra_overlay.py", line 82, in <module>
+    final_gdf.to_file(r"/home/admin_climatecharted_com/data/ISPRA/HPH_Mosaicatura_ISPRA_2020_H_M_L")
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin_climatecharted_com/miniforge3/envs/ccpy4/lib/python3.14/site-packages/geopandas/tools/overlay.py", line 344, in overlay
+    result = _overlay_difference(df1, df2)
+  File "/home/admin_climatecharted_com/miniforge3/envs/ccpy4/lib/python3.14/site-packages/geopandas/tools/overlay.py", line 96, in _overlay_difference
+    new = reduce(
+        lambda x, y: x.difference(y), [geom] + list(df2.geometry.iloc[neighbours])
+    )
+  File "/home/admin_climatecharted_com/miniforge3/envs/ccpy4/lib/python3.14/site-packages/geopandas/tools/overlay.py", line 97, in <lambda>
+    lambda x, y: x.difference(y), [geom] + list(df2.geometry.iloc[neighbours])
+                 ~~~~~~~~~~~~^^^
+  File "/home/admin_climatecharted_com/miniforge3/envs/ccpy4/lib/python3.14/site-packages/shapely/decorators.py", line 173, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/admin_climatecharted_com/miniforge3/envs/ccpy4/lib/python3.14/site-packages/shapely/geometry/base.py", line 658, in difference
+    return shapely.difference(self, other, grid_size=grid_size)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin_climatecharted_com/miniforge3/envs/ccpy4/lib/python3.14/site-packages/shapely/decorators.py", line 173, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/admin_climatecharted_com/miniforge3/envs/ccpy4/lib/python3.14/site-packages/shapely/decorators.py", line 88, in wrapped
+    return func(*args, **kwargs)
+  File "/home/admin_climatecharted_com/miniforge3/envs/ccpy4/lib/python3.14/site-packages/shapely/set_operations.py", line 100, in difference
+    return lib.difference(a, b, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyboardInterrupt
 
-Copying file:///home/admin_climatecharted_com/data/ADB/adb_am_2026/ADB-AM_2026_merge_RP_overlay/ADB-AM_2026_merge_RP_overlay.dbf [Content-Type=application/vnd.dbf]...
-/ [0/5 files][    0.0 B/  1.7 GiB]   0% Done                                    
-Copying file:///home/admin_climatecharted_com/data/ADB/adb_am_2026/ADB-AM_2026_merge_RP_overlay/ADB-AM_2026_merge_RP_overlay.prj [Content-Type=application/octet-stream]...
-/ [0/5 files][    0.0 B/  1.7 GiB]   0% Done                                    
-Copying file:///home/admin_climatecharted_com/data/ADB/adb_am_2026/ADB-AM_2026_merge_RP_overlay/ADB-AM_2026_merge_RP_overlay.shx [Content-Type=application/x-qgis]...
-/ [0/5 files][    0.0 B/  1.7 GiB]   0% Done                                    
-Copying file:///home/admin_climatecharted_com/data/ADB/adb_am_2026/ADB-AM_2026_merge_RP_overlay/ADB-AM_2026_merge_RP_overlay.cpg [Content-Type=application/octet-stream]...
-/ [0/5 files][    0.0 B/  1.7 GiB]   0% Done                                    
-/ [1/5 files][  2.7 MiB/  1.7 GiB]   0% Done                                    
-/ [2/5 files][  2.7 MiB/  1.7 GiB]   0% Done                                    
-/ [3/5 files][ 21.5 MiB/  1.7 GiB]   1% Done                                    
-/ [4/5 files][ 39.8 MiB/  1.7 GiB]   2% Done                                    
--
-\
-\ [4/5 files][155.6 MiB/  1.7 GiB]   8% Done                                    
-|
-| [4/5 files][264.6 MiB/  1.7 GiB]  14% Done                                    
-/
--
-- [4/5 files][362.8 MiB/  1.7 GiB]  20% Done                                    
-\
-|
-| [4/5 files][473.4 MiB/  1.7 GiB]  26% Done                                    
-/
-/ [4/5 files][584.6 MiB/  1.7 GiB]  32% Done                                    
--
-\
-\ [4/5 files][690.5 MiB/  1.7 GiB]  38% Done                                    
-|
-/
-/ [4/5 files][799.6 MiB/  1.7 GiB]  45% Done                                    
--
-- [4/5 files][909.7 MiB/  1.7 GiB]  51% Done                                    
-\
-|
-| [4/5 files][991.6 MiB/  1.7 GiB]  55% Done                                    
-/
-/ [4/5 files][  1.1 GiB/  1.7 GiB]  63% Done                                    
--
-\
-\ [4/5 files][  1.2 GiB/  1.7 GiB]  69% Done 107.8 MiB/s ETA 00:00:05           
-|
-/
-/ [4/5 files][  1.3 GiB/  1.7 GiB]  76% Done 107.2 MiB/s ETA 00:00:04           
--
-- [4/5 files][  1.4 GiB/  1.7 GiB]  82% Done 109.9 MiB/s ETA 00:00:03           
-\
-|
-| [4/5 files][  1.5 GiB/  1.7 GiB]  88% Done 113.0 MiB/s ETA 00:00:02           
-/
--
-- [4/5 files][  1.6 GiB/  1.7 GiB]  94% Done 107.5 MiB/s ETA 00:00:01           
-\
-\ [5/5 files][  1.7 GiB/  1.7 GiB] 100% Done 104.4 MiB/s ETA 00:00:00           
-|
-Operation completed over 5 objects/1.7 GiB.                                      
-INFO:root:Loaded gdf
-INFO:root:RP 50
-INFO:root:RP 100
-INFO:root:RP 200
-INFO:pyogrio._io:Created 39,440 records
-INFO:root:ADB AS - Done
-Copying file:///home/admin_climatecharted_com/data/ADB/adb_as_2026/ADB-AS_2026_merge_RP_overlay/ADB-AS_2026_merge_RP_overlay.cpg [Content-Type=application/octet-stream]...
-/ [0/5 files][    0.0 B/313.0 MiB]   0% Done                                    
-Copying file:///home/admin_climatecharted_com/data/ADB/adb_as_2026/ADB-AS_2026_merge_RP_overlay/ADB-AS_2026_merge_RP_overlay.dbf [Content-Type=application/vnd.dbf]...
-/ [0/5 files][    0.0 B/313.0 MiB]   0% Done                                    
-Copying file:///home/admin_climatecharted_com/data/ADB/adb_as_2026/ADB-AS_2026_merge_RP_overlay/ADB-AS_2026_merge_RP_overlay.shp [Content-Type=application/x-qgis]...
-/ [0/5 files][    0.0 B/313.0 MiB]   0% Done                                    
-Copying file:///home/admin_climatecharted_com/data/ADB/adb_as_2026/ADB-AS_2026_merge_RP_overlay/ADB-AS_2026_merge_RP_overlay.shx [Content-Type=application/x-qgis]...
-/ [0/5 files][    0.0 B/313.0 MiB]   0% Done                                    
-==> NOTE: You are uploading one or more large file(s), which would run
-significantly faster if you enable parallel composite uploads. This
-feature can be enabled by editing the
-"parallel_composite_upload_threshold" value in your .boto
-configuration file. However, note that if you do this large files will
-be uploaded as `composite objects
-<https://cloud.google.com/storage/docs/composite-objects>`_,which
-means that any user who downloads such objects will need to have a
-compiled crcmod installed (see "gsutil help crcmod"). This is because
-without a compiled crcmod, computing checksums on composite objects is
-so slow that gsutil disables downloads of composite objects.
-
-Copying file:///home/admin_climatecharted_com/data/ADB/adb_as_2026/ADB-AS_2026_merge_RP_overlay/ADB-AS_2026_merge_RP_overlay.prj [Content-Type=application/octet-stream]...
-/ [0/5 files][    0.0 B/313.0 MiB]   0% Done                                    
-/ [1/5 files][  1.0 MiB/313.0 MiB]   0% Done                                    
-/ [2/5 files][  1.0 MiB/313.0 MiB]   0% Done                                    
-/ [3/5 files][  1.0 MiB/313.0 MiB]   0% Done                                    
-/ [4/5 files][  1.5 MiB/313.0 MiB]   0% Done                                    
--
-- [4/5 files][ 92.8 MiB/313.0 MiB]  29% Done                                    
-\
-|
-| [4/5 files][178.9 MiB/313.0 MiB]  57% Done                                    
-/
--
-- [4/5 files][247.0 MiB/313.0 MiB]  78% Done                                    
-\
-\ [5/5 files][313.0 MiB/313.0 MiB] 100% Done                                    
-|
-Operation completed over 5 objects/313.0 MiB.                                    
-INFO:root:Loaded gdfs
-/home/admin_climatecharted_com/miniforge3/envs/ccpy4/lib/python3.14/site-packages/geopandas/tools/overlay.py:358: UserWarning: `keep_geom_type=True` in overlay resulted in 12028 dropped geometries of different geometry types than df1 has. Set `keep_geom_type=False` to retain all geometries
-  result = _collection_extract(result, geom_type, keep_geom_type_warning)
-INFO:root:overlayed gdf_M
-/home/admin_climatecharted_com/miniforge3/envs/ccpy4/lib/python3.14/site-packages/geopandas/tools/overlay.py:358: UserWarning: `keep_geom_type=True` in overlay resulted in 11151 dropped geometries of different geometry types than df1 has. Set `keep_geom_type=False` to retain all geometries
-  result = _collection_extract(result, geom_type, keep_geom_type_warning)
-INFO:root:overlayed gdf_L
-INFO:pyogrio._io:Created 129,477 records
-INFO:pyogrio._io:Created 45,369 records
-INFO:pyogrio._io:Created 412,940 records
-INFO:root:ADB AO - Done
-Copying file:///home/admin_climatecharted_com/data/ADB/adb_ao/ADB_AO_H_M_L/ADB_AO_H_M_L.cpg [Content-Type=application/octet-stream]...
-/ [0/5 files][    0.0 B/243.9 MiB]   0% Done                                    
-Copying file:///home/admin_climatecharted_com/data/ADB/adb_ao/ADB_AO_H_M_L/ADB_AO_H_M_L.dbf [Content-Type=application/vnd.dbf]...
-/ [0/5 files][    0.0 B/243.9 MiB]   0% Done                                    
-Copying file:///home/admin_climatecharted_com/data/ADB/adb_ao/ADB_AO_H_M_L/ADB_AO_H_M_L.shp [Content-Type=application/x-qgis]...
-/ [0/5 files][    0.0 B/243.9 MiB]   0% Done                                    
-==> NOTE: You are uploading one or more large file(s), which would run
-significantly faster if you enable parallel composite uploads. This
-feature can be enabled by editing the
-"parallel_composite_upload_threshold" value in your .boto
-configuration file. However, note that if you do this large files will
-be uploaded as `composite objects
-<https://cloud.google.com/storage/docs/composite-objects>`_,which
-means that any user who downloads such objects will need to have a
-compiled crcmod installed (see "gsutil help crcmod"). This is because
-without a compiled crcmod, computing checksums on composite objects is
-so slow that gsutil disables downloads of composite objects.
-
-Copying file:///home/admin_climatecharted_com/data/ADB/adb_ao/ADB_AO_H_M_L/ADB_AO_H_M_L.shx [Content-Type=application/x-qgis]...
-/ [0/5 files][    0.0 B/243.9 MiB]   0% Done                                    
-Copying file:///home/admin_climatecharted_com/data/ADB/adb_ao/ADB_AO_H_M_L/ADB_AO_H_M_L.prj [Content-Type=application/octet-stream]...
-/ [0/5 files][    0.0 B/243.9 MiB]   0% Done                                    
-/ [1/5 files][  7.8 MiB/243.9 MiB]   3% Done                                    
-/ [2/5 files][  9.6 MiB/243.9 MiB]   3% Done                                    
-/ [3/5 files][ 21.5 MiB/243.9 MiB]   8% Done                                    
-/ [4/5 files][ 42.1 MiB/243.9 MiB]  17% Done                                    
--
-\
-\ [4/5 files][139.6 MiB/243.9 MiB]  57% Done                                    
-|
-| [4/5 files][243.5 MiB/243.9 MiB]  99% Done                                    
-| [5/5 files][243.9 MiB/243.9 MiB] 100% Done                                    
-/
-Operation completed over 5 objects/243.9 MiB.                                    
+real	1454m56.870s
+user	1452m24.857s
+sys	2m34.703s

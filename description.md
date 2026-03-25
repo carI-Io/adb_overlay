@@ -16,6 +16,7 @@ tmux attach -t adb
 
 tmux new -s adb
 cd /home/admin_climatecharted_com/GitHub/flood_maps && { time ./run.sh; } &> ./execution_output.txt
+cd /home/admin_climatecharted_com/GitHub/flood_maps && { time ./run_adbs.sh; } &> ./execution_output_adbs.txt
 
 adb  ETA  194m
 tmux kill-session -t adb
