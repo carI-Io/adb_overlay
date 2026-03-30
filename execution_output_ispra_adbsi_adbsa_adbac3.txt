@@ -11,3 +11,10 @@
 2026-03-30 16:14:31,345 - INFO - Processing ADB: SA
 2026-03-30 16:15:30,337 - INFO - SA clipped + standardized
 2026-03-30 16:15:44,735 - INFO - M_clean overlayed
+2026-03-30 16:33:07,806 - INFO - L_clean overlayed and validated
+2026-03-30 16:33:07,810 - INFO - SA merged
+2026-03-30 16:34:14,269 - INFO - SA processed
+2026-03-30 16:34:15,801 - INFO - Created 4,270 records
+2026-03-30 16:34:15,801 - INFO - gdf_sa stored
+2026-03-30 16:34:15,801 - INFO - Processing ADB: AC
+2026-03-30 16:35:04,248 - INFO - AC clipped + standardized
