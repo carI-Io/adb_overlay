@@ -1,0 +1,13 @@
+2026-03-30 16:10:24,415 - INFO - Start
+2026-03-30 16:14:20,240 - INFO - ISPRA - loaded gdfs
+2026-03-30 16:14:20,341 - INFO - Processing ADB: SI
+2026-03-30 16:14:26,535 - INFO - SI clipped + standardized
+2026-03-30 16:14:28,296 - INFO - M_clean overlayed
+2026-03-30 16:14:31,190 - INFO - L_clean overlayed and validated
+2026-03-30 16:14:31,192 - INFO - SI merged
+2026-03-30 16:14:31,312 - INFO - SI processed
+2026-03-30 16:14:31,345 - INFO - Created 513 records
+2026-03-30 16:14:31,345 - INFO - gdf_si stored
+2026-03-30 16:14:31,345 - INFO - Processing ADB: SA
+2026-03-30 16:15:30,337 - INFO - SA clipped + standardized
+2026-03-30 16:15:44,735 - INFO - M_clean overlayed

@@ -1,0 +1,47 @@
+2026-03-30 14:20:53,961 - INFO - Start
+2026-03-30 14:24:49,733 - INFO - ISPRA - loaded gdfs
+2026-03-30 14:24:49,834 - INFO - Processing ADB: SI
+2026-03-30 14:24:56,000 - INFO - SI clipped + standardized
+2026-03-30 14:24:57,752 - INFO - M_clean overlayed
+2026-03-30 14:25:00,620 - INFO - L_clean overlayed
+2026-03-30 14:25:00,621 - INFO - SI merged
+2026-03-30 14:25:00,742 - INFO - SI geometry cleaned (polygon-only)
+2026-03-30 14:25:00,742 - INFO - SI processed
+2026-03-30 14:25:00,825 - INFO - Created 9,740 records
+2026-03-30 14:25:00,826 - INFO - gdf_si stored
+2026-03-30 14:25:00,826 - INFO - Processing ADB: SA
+2026-03-30 14:25:59,379 - INFO - SA clipped + standardized
+2026-03-30 14:26:13,754 - INFO - M_clean overlayed
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/admin_climatecharted_com/GitHub/flood_maps/adb_overlay.py", line 120, in <module>
+    gdf_sa = process_adb(delim_adb_sa, gdfs, "SA")
+  File "/home/admin_climatecharted_com/GitHub/flood_maps/adb_overlay.py", line 51, in process_adb
+    L_clean = gpd.overlay(L, HM, how="difference", keep_geom_type=False)
+  File "/home/admin_climatecharted_com/miniforge3/envs/ccpy4/lib/python3.14/site-packages/geopandas/tools/overlay.py", line 344, in overlay
+    result = _overlay_difference(df1, df2)
+  File "/home/admin_climatecharted_com/miniforge3/envs/ccpy4/lib/python3.14/site-packages/geopandas/tools/overlay.py", line 96, in _overlay_difference
+    new = reduce(
+        lambda x, y: x.difference(y), [geom] + list(df2.geometry.iloc[neighbours])
+    )
+  File "/home/admin_climatecharted_com/miniforge3/envs/ccpy4/lib/python3.14/site-packages/geopandas/tools/overlay.py", line 97, in <lambda>
+    lambda x, y: x.difference(y), [geom] + list(df2.geometry.iloc[neighbours])
+                 ~~~~~~~~~~~~^^^
+  File "/home/admin_climatecharted_com/miniforge3/envs/ccpy4/lib/python3.14/site-packages/shapely/decorators.py", line 173, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/admin_climatecharted_com/miniforge3/envs/ccpy4/lib/python3.14/site-packages/shapely/geometry/base.py", line 658, in difference
+    return shapely.difference(self, other, grid_size=grid_size)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin_climatecharted_com/miniforge3/envs/ccpy4/lib/python3.14/site-packages/shapely/decorators.py", line 173, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/admin_climatecharted_com/miniforge3/envs/ccpy4/lib/python3.14/site-packages/shapely/decorators.py", line 88, in wrapped
+    return func(*args, **kwargs)
+  File "/home/admin_climatecharted_com/miniforge3/envs/ccpy4/lib/python3.14/site-packages/shapely/set_operations.py", line 100, in difference
+    return lib.difference(a, b, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+shapely.errors.GEOSException: AssertionFailedException: Should never reach here: Unable to determine overlay result geometry dimension
+
+real	21m59.803s
+user	22m6.839s
+sys	0m3.979s

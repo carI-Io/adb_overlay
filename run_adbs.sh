@@ -15,5 +15,8 @@ cd /home/admin_climatecharted_com/GitHub/flood_maps
 # python -m adb_ao_overlay
 # gsutil -m cp -r "/home/admin_climatecharted_com/data/ADB/adb_ao/ADB_AO_Tiranti" gs://cc-geodata-bucket/
 
-python -m ispra_overlay
-gsutil -m cp -r "/home/admin_climatecharted_com/data/ISPRA/HPH_Mosaicatura_ISPRA_2020_H_M_L" gs://cc-geodata-bucket/
+# python -m ispra_overlay
+# gsutil -m cp -r "/home/admin_climatecharted_com/data/ISPRA/HPH_Mosaicatura_ISPRA_2020_H_M_L" gs://cc-geodata-bucket/
+
+python -m adb_overlay
+gsutil -m cp -r "/home/admin_climatecharted_com/data/ADB/ispra_adb_2026" gs://cc-geodata-bucket/
