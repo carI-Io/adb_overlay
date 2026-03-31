@@ -4,9 +4,9 @@
 
 tmux new -s adb
 chmod +x ./run_adbs.sh
-cd /home/admin_climatecharted_com/GitHub/flood_maps && { time ./run_adbs.sh; } &> ./execution_output_ispra2.txt
+cd /home/admin_climatecharted_com/GitHub/flood_maps && { time ./run_adbs.sh; } &> ./execution_output_ispra_adbsi_adbsa_adbac3.txt
 
-adb  ETA  
+adb  ETA 301m
 tmux kill-session -t adb
 
 tmux ls
