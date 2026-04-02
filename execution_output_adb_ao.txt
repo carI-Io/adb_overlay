@@ -1,34 +1,0 @@
-INFO:root:ADB AO - loaded gdfs
-/home/admin_climatecharted_com/miniforge3/envs/ccpy4/lib/python3.14/site-packages/geopandas/tools/overlay.py:358: UserWarning: `keep_geom_type=True` in overlay resulted in 12028 dropped geometries of different geometry types than df1 has. Set `keep_geom_type=False` to retain all geometries
-  result = _collection_extract(result, geom_type, keep_geom_type_warning)
-INFO:root:overlayed gdf_M
-/home/admin_climatecharted_com/miniforge3/envs/ccpy4/lib/python3.14/site-packages/geopandas/tools/overlay.py:358: UserWarning: `keep_geom_type=True` in overlay resulted in 7866 dropped geometries of different geometry types than df1 has. Set `keep_geom_type=False` to retain all geometries
-  result = _collection_extract(result, geom_type, keep_geom_type_warning)
-INFO:root:overlayed gdf_L
-INFO:pyogrio._io:Created 129,477 records
-INFO:pyogrio._io:Created 42,999 records
-INFO:pyogrio._io:Created 410,570 records
-INFO:root:ADB_AO_Tiranti saved
-Copying file:///home/admin_climatecharted_com/data/ADB/adb_ao/ADB_AO_Tiranti/ADB_AO_Tiranti.shx [Content-Type=application/x-qgis]...
-/ [0/5 files][    0.0 B/249.4 MiB]   0% Done                                    Copying file:///home/admin_climatecharted_com/data/ADB/adb_ao/ADB_AO_Tiranti/ADB_AO_Tiranti.cpg [Content-Type=application/octet-stream]...
-/ [0/5 files][    0.0 B/249.4 MiB]   0% Done                                    Copying file:///home/admin_climatecharted_com/data/ADB/adb_ao/ADB_AO_Tiranti/ADB_AO_Tiranti.prj [Content-Type=application/octet-stream]...
-/ [0/5 files][    0.0 B/249.4 MiB]   0% Done                                    Copying file:///home/admin_climatecharted_com/data/ADB/adb_ao/ADB_AO_Tiranti/ADB_AO_Tiranti.shp [Content-Type=application/x-qgis]...
-/ [0/5 files][    0.0 B/249.4 MiB]   0% Done                                    Copying file:///home/admin_climatecharted_com/data/ADB/adb_ao/ADB_AO_Tiranti/ADB_AO_Tiranti.dbf [Content-Type=application/vnd.dbf]...
-/ [0/5 files][    0.0 B/249.4 MiB]   0% Done                                    ==> NOTE: You are uploading one or more large file(s), which would run
-significantly faster if you enable parallel composite uploads. This
-feature can be enabled by editing the
-"parallel_composite_upload_threshold" value in your .boto
-configuration file. However, note that if you do this large files will
-be uploaded as `composite objects
-<https://cloud.google.com/storage/docs/composite-objects>`_,which
-means that any user who downloads such objects will need to have a
-compiled crcmod installed (see "gsutil help crcmod"). This is because
-without a compiled crcmod, computing checksums on composite objects is
-so slow that gsutil disables downloads of composite objects.
-
-/ [1/5 files][  3.1 MiB/249.4 MiB]   1% Done                                    / [2/5 files][  3.1 MiB/249.4 MiB]   1% Done                                    / [3/5 files][ 12.4 MiB/249.4 MiB]   4% Done                                    / [4/5 files][ 53.0 MiB/249.4 MiB]  21% Done                                    -\\ [4/5 files][164.6 MiB/249.4 MiB]  66% Done                                    || [5/5 files][249.4 MiB/249.4 MiB] 100% Done                                    /
-Operation completed over 5 objects/249.4 MiB.                                    
-
-real	181m52.020s
-user	181m56.308s
-sys	0m4.387s
