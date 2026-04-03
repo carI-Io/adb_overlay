@@ -36,7 +36,6 @@ out_meta.update({
     "count": 1
 })
 
-# output_path = r"D:\data\HZRD_Flood\ADB_PO_PGRA_2027\Altezza\adbpo_pgra2027_max_3035_2m.tif"
 output_path = r"/home/admin_climatecharted_com/data/Altezza/adbpo_pgra2027_max_3035_2m.tif"
 with rasterio.open(output_path, "w", **out_meta) as dest:
     dest.write(merged, 1)

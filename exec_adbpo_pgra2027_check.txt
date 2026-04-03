@@ -1,0 +1,14 @@
+Resolution ADBPO: (2.0, 2.0)
+Resolution Milano: (2.0, 2.0)
+Transform ADBPO: | 2.00, 0.00, 407577.56|
+| 0.00,-2.00, 5043627.12|
+| 0.00, 0.00, 1.00|
+Transform Milano: | 2.00, 0.00, 4251353.80|
+| 0.00,-2.00, 2492696.53|
+| 0.00, 0.00, 1.00|
+Offset in pixels (x, y): 1921888.1233232438 1275465.29546235
+Grids perfectly aligned? True
+
+real	0m0.497s
+user	0m11.482s
+sys	0m0.093s

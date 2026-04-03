@@ -9,9 +9,13 @@ logging.basicConfig(level=logging.INFO)
 
 t0 = time.time()
 
-adbpo_path = "/home/admin_climatecharted_com/data/Altezza/adbpo_pgra2027_l_merged_3035_2m.tif"
-milano_path = "/home/admin_climatecharted_com/data/Altezza/Milano_TR500_2m.tif"
-out_path = "/home/admin_climatecharted_com/data/Altezza/adbpo_pgra2027_l_merged_milano_tr500_3035_2m.tif"
+# adbpo_path = "/home/admin_climatecharted_com/data/Altezza/adbpo_pgra2027_l_merged_3035_2m.tif"
+# milano_path = "/home/admin_climatecharted_com/data/Altezza/Milano_TR500_2m.tif"
+# out_path = "/home/admin_climatecharted_com/data/Altezza/adbpo_pgra2027_l_merged_milano_tr500_3035_2m.tif"
+
+adbpo_path = "/home/admin_climatecharted_com/data/Altezza/adbpo_pgra2027_l_merged_3035_5m.tif"
+milano_path = "/home/admin_climatecharted_com/data/Altezza/Milano_TR500_5m.tif"
+out_path = "/home/admin_climatecharted_com/data/Altezza/adbpo_pgra2027_l_merged_milano_tr500_3035_5m.tif"
 
 # -------------------------
 # STEP 1: COPY BASE RASTER
