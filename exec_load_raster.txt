@@ -1,0 +1,37 @@
+=== Fri Apr  3 14:19:03 UTC 2026 ===
+Loading raster into climatecharted_geo.adbpo_pgra2027_l_merged_milano_tr500_3035_5m_vm...
+./load_raster.sh: line 24: raster2pgsql: command not found
+./load_raster.sh: line 25: psql: command not found
+Done.
+
+real	0m0.002s
+user	0m0.002s
+sys	0m0.001s
+=== Fri Apr  3 14:22:30 UTC 2026 ===
+Loading raster into climatecharted_geo.adbpo_pgra2027_l_merged_milano_tr500_3035_5m_vm...
+Processing 1/1: /home/admin_climatecharted_com/data/Altezza/adbpo_pgra2027_l_merged_milano_tr500_3035_5m.tif
+psql: error: connection to server at "91.98.183.177", port 6432 failed: FATAL:  password authentication failed
+Done.
+
+real	0m20.664s
+user	0m20.523s
+sys	0m0.051s
+=== Fri Apr  3 14:25:52 UTC 2026 ===
+Loading raster into climatecharted_geo.adbpo_pgra2027_l_merged_milano_tr500_3035_5m_vm...
+Processing 1/1: /home/admin_climatecharted_com/data/Altezza/adbpo_pgra2027_l_merged_milano_tr500_3035_5m.tif
+BEGIN
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+...
+
+FATAL:  query timeout
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+connection to server was lost
+Done.
+
+real	109m52.781s
+user	109m43.791s
+sys	0m5.041s
